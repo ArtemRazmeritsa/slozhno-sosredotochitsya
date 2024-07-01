@@ -1,4 +1,8 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --main-font: 'IBM Plex mono';
+  --main-text-color: #F1B2CE;
+  --subtitle-color: #000028;
+  --accent-color: #FF0070;
+  --padding-inline: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /* Боковой паддинг с 10px до 20px для разных разрешений */
+  --heading-text-color: #DB00FF;
+} 
