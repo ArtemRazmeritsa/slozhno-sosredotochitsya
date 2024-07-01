@@ -1,8 +1,13 @@
 :root {
   --main-font: 'IBM Plex mono';
   --main-text-color: #F1B2CE;
-  --subtitle-color: #000028;
   --accent-color: #FF0070;
   --padding-inline: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /* Боковой паддинг с 10px до 20px для разных разрешений */
   --heading-text-color: #DB00FF;
+  --decorated-zone-color: #FF0070;
+  --background-image: url(../images/cover-image-dark.png);
+  --header-menu-color: #FF0070;
+  --background-color: #000028;
+  --title-color: #FF0070;
+  --header-menu-color-transparent: rgba(255, 0, 112, 0.5);
 } 
