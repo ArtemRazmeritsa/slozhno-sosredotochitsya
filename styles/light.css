@@ -10,11 +10,9 @@
   --background-color: #FFF1F7;
   --title-color: #353430;
   --header-menu-color-transparent: rgba(53, 52, 48, 0.5);
-}
-
-.page.theme_light .header__decorated-element {
-  visibility: hidden;
-}
+  --decorated-element-hidden: hidden;
+  --subtitle-color: #353430;
+} 
 
 
 @media (min-width: 1024px) {
@@ -42,9 +40,7 @@
     --background-color: #FFF1F7;
     --title-color: #353430;
     --header-menu-color-transparent: rgba(53, 52, 48, 0.5);
-  }
-
-  .page.theme_auto .header__decorated-element {
-    visibility: hidden;
-  }
+    --decorated-element-hidden: hidden;
+    --subtitle-color: #353430;
+  } 
 }

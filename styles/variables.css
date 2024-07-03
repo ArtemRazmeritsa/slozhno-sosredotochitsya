@@ -10,4 +10,6 @@
   --background-color: #000028;
   --title-color: #FF0070;
   --header-menu-color-transparent: rgba(255, 0, 112, 0.5);
+  --decorated-element-hidden: visible;
+  --subtitle-color: #000028;
 } 
