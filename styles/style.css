@@ -73,8 +73,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: clamp(4.0625rem, -2.3187rem + 27.2265vw, 10.75rem);
-  margin-block-end: clamp(4.0625rem, -2.3783rem + 27.4809vw, 10.8125rem);
+  margin: 65px 0;
   color: var(--header-menu-color, #FF0070);
 }
 
@@ -109,10 +108,9 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border: none;
-  text-decoration: underline;
+  border-bottom: 1px solid var(--header-menu-color);
+  padding-block-end: 4px;
   outline: none;
-  text-underline-offset: 4px;
 }
 
 .header__theme-menu-button:hover {
@@ -128,7 +126,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
-  margin-block-end: clamp(3.4375rem, -2.9437rem + 27.2265vw, 10.125rem);
+  margin-block-end: 55px;
 }
 
 .header__title-text {
@@ -136,7 +134,7 @@
   font-weight: 700;
   line-height: 23.4px;
   max-block-size: 117px;
-  margin-block-end: clamp(3.5rem, -2.8812rem + 27.2265vw, 10.1875rem);
+  margin-block-end: 56px;
 }
 
 .title__decor {
@@ -187,7 +185,7 @@
 }
 
 .content__list-item-link:focus-visible {
-  border: 1px solid var(--main-text-color, #F1B2CE);
+  outline: 1px solid var(--main-text-color, #F1B2CE);
 }
 
 .content__list-item__subtitle,
@@ -263,16 +261,28 @@
     max-width: 1024px;
   }
 
+  .header {
+    min-block-size: 1024px;
+  }
+
+
+  .header__theme-menu {
+    margin-block-start: 172px;
+    margin-block-end: 173px;
+  }
+
   .header__title {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    margin-left: -20px;
+    margin-inline-start: -20px;
+    margin-block-end: 162px;
   }
   
   .header__title-text {
     justify-self: end;
     max-inline-size: 364px;
+    margin-block-end: 163px;
   }
 
   .content {
@@ -339,6 +349,11 @@
 }
 
 @media (min-width: 1024px) {
+
+  .header {
+    min-block-size: 768px;
+  }
+
   .header__theme-menu {
     grid-row: 1;
     justify-self: center;
@@ -374,4 +389,5 @@
   .content__section-reasons .content__section-list {
     grid-template-columns: repeat(3,1fr);
   }
+  
 }
